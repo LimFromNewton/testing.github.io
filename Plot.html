@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			background-image: linear-gradient(#002B5B,#1A5F7A,#159895,#57C5B6);
+
+		}
+		
+		/* Navbar styling */
+		body {
+			background-color: #f2f2f2;
+		}
+		
+		ul a.active{
+					background-color: #27E1C1;
+					color:black;
+					}
+		.Pone{
+			font-size:30px;
+			text-shadow: 2px 3px black;
+			color: white;
+			}
+			
+		ul {
+			background-image: linear-gradient(#002B5B,#1A5F7A,#159895,#57C5B6);
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #27E1C1;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: #27E1C1;
+		}
+		
+		/* Slider styling */
+		.slider {
+			width: 100%;
+			height: 597px;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.slide {
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		
+		.slide img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}	
+		
+		/* frame video */
+		.frame{
+				padding-left:19%;
+				}
+				
+		iframe{
+				width:75%;
+				height:500px;
+				}
+				
+		.home{
+			text-shadow: 2px 3px black;
+			color: white;
+			}
+	</style>
+</head>
+<body>
+<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="Plot.html" class="active">Plot</a></li>
+		<li><a href="Character.html">Characters</a></li>
+		<li><a href="About me.html">About Me</a></li>
+	</ul>
+	
+<!-- Slider -->
+	<div class="slider">
+		<div class="slide">
+			<img src="wow.jpg">
+		</div>
+		<div class="slide">
+			<img src="Damn.jpg">
+		</div>
+		<div class="slide">
+			<img src="image.jpg">
+		</div>
+	</div>
+	
+	<br>
+	
+	<div class="home">
+	<h1 style="text-align:center;"> BLUE LOCK⚽ </h1>
+	</div>
+	<br>
+	<div class="Pone">
+	<h1 style="text-align: justify; margin-right:20px;"><strong>Plot</strong></h1>
+			<p>In <strong>2018</strong>, the Japanese national team finished 16th in the FIFA World Cup.
+			As a result, the Japan Football Association hires the football enigma Ego Jinpachi.
+			His master plan to lead Japan to stardom is Blue Lock, a training regimen designed to 
+			create the world's greatest egotist striker.
+			Those who fail Blue Lock will never again be permitted to represent any Japanese team.
+			Yoichi Isagi, an unknown high school football player who is conflicted about his playing style,
+			decides to join the program in order to become the best egotistical striker in the world.</p>
+			<p>
+			Blue Lock is set in the wake of the latest World Cup tournament,
+			wherein Japan suffered a debilitating defeat, both on the field and toward its national pride.
+			Seeking to change its fortunes, the Japanese Soccer Union enacts a training experiment titled Blue Lock.
+			Headed by mysterious soccer savant Ego Jinpachi, the goal of the program is to bring together a group of players and find the
+			world's greatest "ego striker," with this player thereafter leading Japan to victory against other soccer teams.
+			Of course, this is no ordinary sports regimen, and the results could be disastrous for those who fail to make the cut.
+			Losers will be disqualified from ever having any role in Japanese professional soccer going forward.
+			Ironically, the main character is Yoichi Isagi, a somewhat middling player whose goal is to somehow best his
+			opponents and become the best soccer player in the world.</p>
+			
+			<p>
+			Japan keeps losing the World Cup, over and over. After Isagi Yoichi,
+			a forward for a high school team, gets eliminated in the last game in the qualifier for nationals,
+			gets invited to a program called "Blue Lock" Their coach will be Ego Jinpachi,
+			who intends to "destroy Japanese loser football" by introducing a radical new training regimen:
+			isolate 300 young forwards in a prison-like institution called "Blue Lock" and put them through 
+			rigorous training aimed at creating "the world's greatest egotist striker."</p>
+	</div>
+	<div class="frame">
+	<iframe src="https://www.youtube.com/embed/0DgJ45LQPAs&t=10s?playlist=0DgJ45LQPAs&t=10s=1">
+	</iframe>
+	</div>
+	<br>
+	
+	<script>
+		// Slider functionality
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("slide");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			slides[slideIndex-1].style.display = "block";  
+			setTimeout(showSlides, 5000); // Change image every 5 seconds
+		}
+		
+		// Responsive navbar functionality
+	
+	</script>
+</body>
+</html>

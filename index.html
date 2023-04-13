@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			background-image: linear-gradient(#002B5B,#1A5F7A,#159895,#57C5B6);
+		}
+		
+		/* Navbar styling */
+		body {
+			background-color: #f2f2f2;
+		}
+		
+		ul a.active{
+					background-color: #27E1C1;
+					color:black;
+					}
+		.home{
+			text-shadow: 2px 3px black;
+			color: white;
+			}
+		
+		.Pone{
+			font-size:30px;
+			text-shadow: 2px 3px black;
+			color: white;
+			}
+			
+		ul {
+			background-image: linear-gradient(#002B5B,#1A5F7A,#159895,#57C5B6);
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #27E1C1;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			
+		}
+
+		li a:hover {
+			background-color: #27E1C1;
+		}
+		
+		/* Slider styling */
+		.slider {
+			width: 100%;
+			height: 597px;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.slide {
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		
+		.slide img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}	
+		
+		/* frame video */
+		.frame{
+				padding-left:19%;
+				}
+				
+		iframe{
+				width:75%;
+				height:500px;
+				}
+	
+	</style>
+</head>
+<body>
+<ul>
+		<li><a href="index.html" class="active">Home</a></li>
+		<li><a href="Plot.html">Plot</a></li>
+		<li><a href="Character.html">Characters</a></li>
+		<li><a href="About me.html">About Me</a></li>
+	</ul>
+	
+	<!-- Slider -->
+	<div class="slider">
+		<div class="slide">
+			<img src="wow.jpg">
+		</div>
+		<div class="slide">
+			<img src="Damn.jpg">
+		</div>
+		<div class="slide">
+			<img src="image.jpg">
+		</div>
+	</div>
+	
+	<br>
+	
+	<div class="home">
+	<h1 style="text-align:center;"> BLUE LOCK⚽ </h1>
+	</div>
+	<br>
+	<div class="Pone">
+	<p style="text-align: justify; margin-right:20px;"><strong>Blue Lock</strong>
+			(Japanese: ブルーロック, Hepburn: Burū Rokku)
+			(stylized as BLUELOCK) is a Japanese manga series written by Muneyuki Kaneshiro and illustrated by Yusuke Nomura.
+			It has been serialized in Kodansha's Weekly Shōnen Magazine since August 2018, with its chapters collected in 22
+			tankōbon volumes as of December 2022.
+			An anime television series adaptation produced by Eight Bit premiered in October 2022.
+			As of February 2023, the manga had over 21.5 million copies in circulation, making it one of the best-selling manga 
+			series. In 2021, Blue Lock won the 45th Kodansha Manga Award in the shōnen category.</p>
+	</div>
+	<div class="frame">
+	<iframe src="https://www.youtube.com/embed/0DgJ45LQPAs&t=10s?playlist=0DgJ45LQPAs&t=10s=1">
+	</iframe>
+	</div>
+	<br>
+	
+	<script>
+		// Slider functionality
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("slide");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			slides[slideIndex-1].style.display = "block";  
+			setTimeout(showSlides, 5000); // Change image every 5 seconds
+		}
+		
+		// Responsive navbar functionality
+	
+	</script>
+</body>
+</html>
